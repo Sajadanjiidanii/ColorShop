@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Css Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Css Respons -->
+    <link rel="stylesheet" href="css/respons.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Color Shop</title>
+</head>
+<body>
+
+    <nav id="menu">
+
+        <div id="menu-top">
+
+            <img id="logo-top" src="imgs/logo.png" alt="logo">
+
+            <div id="searchbox">
+                <input id="input-search" placeholder="جستجوی محصول ..." type="text" />
+                <i class='bx bx-search-alt-2'></i>
+                <i class="hide rem remove-icon">X</i>
+            </div>
+
+            <div id="login-signup">
+                <span id="login">ورود /</span>
+                <span id="signup"> عضویت </span>
+                <i id="cart-icon" class='bx bx-cart-alt'></i>
+            </div>
+
+        </div>
+
+        <div id="sub-menu">
+            <ul id="items">
+                <li><a href="https://sajadanjiidanii.github.io/ColorShop-product/?Product=Colors"> رنگ </a></li>
+                <li><a href="https://sajadanjiidanii.github.io/ColorShop-product/?Product=Sprays"> اسپری </a></li>
+                <li><a href="https://sajadanjiidanii.github.io/ColorShop-product/?Product=Tools"> ابزار و لوازم </a></li>
+                <li><a href="https://sajadanjiidanii.github.io/ColorShop-product/?Product=Supplies"> لوازم هنری </a></li>
+                <li><a href="https://sajadanjiidanii.github.io/ColorShop-product/?Product=Epoxys"> محصولات اپوکسی </a></li>
+                <li><a href="https://sajadanjiidanii.github.io/ColorShop-product/?Product=Dishes"> ظروف خام </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id="content">
+            
+            <div id="top-slider">
+                <img id="slider-img" src="imgs/slider img/Paint-Cans.jpg">
+            </div>
+
+            <div id="options">
+                <img src="/imgs/options img/ph-banner-01-min.jpg">
+                <img src="/imgs/options img/ph-banner-02.jpg">
+                <img src="/imgs/options img/ph-banner-03-min.jpg">
+                <img src="/imgs/options img/ph-banner-04-min.jpg">
+            </div>
+
+            <div class="prodoctbox">
+                <h1 class="title"> جدیدترین محصولات </h1>
+                <ul class="Products" id="NewProducts"></ul>
+            </div>
+
+            <div class="prodoctbox">
+                <h1 class="title"> پرفروشترین محصولات </h1>
+                <ul class="Products" id="bestsellerItem"></ul>
+            </div>
+
+            <div class="prodoctbox">
+                <h1 class="title"> دیگر محصولات </h1>
+                <ul class="Products" id="otherItem"></ul>
+                <button id="showMore">مشاهده همه محصولات</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div id="footerContent">
+            <ul>
+                <li>اطلاعات سایت</li>
+                <li>
+                    <i class='bx bxs-phone bx-rotate-270'></i>
+                    تلفن : 02100000000
+                </li>
+                <li>
+                    <i class='bx bxs-envelope'></i>
+                    ایمیل : info@gmail.com
+                </li>
+                <li>
+                    <i class='bx bxs-home'></i>
+                    نشانی : تهران , ورامین , خیراباد , بوستان 11
+                </li>
+                <li>
+                    <i class='bx bxs-time'></i>
+                    ساعت پاسخگویی : شنبه تا چهارشنبه: 17 - 8  (به جز روزهای تعطیل)
+                </li>
+            </ul>
+            <ul id="menu-links">
+                <li>لینک‌های مفید</li>
+                <a href="#">درباره ما</a>
+                <a href="#">تماس با ما</a>
+                <a href="#">قوانین و مقررات</a>
+                <a href="#">رویه بازگشت کالا</a>
+                <a href="#">شرایط حمل و تحویل کالا</a>
+            </ul>
+            <img id="enamadImg" src="/imgs/enamad.png">
+        </div>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
