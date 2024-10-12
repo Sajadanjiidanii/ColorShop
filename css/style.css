@@ -231,6 +231,8 @@ button#showMore:hover{
 }
 #enamadImg{
     width: 200px;
+    position: absolute;
+    left: 0;
 }
 
 /* class */
