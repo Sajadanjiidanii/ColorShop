@@ -59,6 +59,7 @@
     }
     #enamadImg{
         position: relative;
+        margin: 0 auto;
     }
     #options{
         margin-bottom: 230px;
