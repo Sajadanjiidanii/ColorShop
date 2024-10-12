@@ -68,6 +68,12 @@ div#login-signup{
     color: rgb(118, 118, 118);
     left: -10px;
 }
+div#login-signup > span{
+    cursor: pointer;
+}
+div#login-signup > span:hover{
+    color: black;
+}
 #cart-icon{
     cursor: pointer;
     font-size: 30px;
