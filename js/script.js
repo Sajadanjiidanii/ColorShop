@@ -51,3 +51,32 @@ setInterval(function(){
     sliderImgs.splice(0,1);
 },5000);
 /// end create slider ///
+
+/// sign in chacke ///
+
+const loginSignup = $.querySelector("#login-signup");
+const logIn = $.querySelector("#login");
+const signUp = $.querySelector("#signup");
+
+function exitAccount(){
+    userAccount.style.display = "none";
+    exitAccountBtn.style.display = "none";
+    logIn.style.display = "inline";
+    signUp.style.display = "inline";
+}
+
+function signChack(){
+    let isName = JSON.parse(localStorage.getItem("Name") != "");
+    let userName = localStorage.getItem("Name");
+
+    if( isName ){
+        logIn.style.display = "none";
+        signUp.style.display = "none";
+        loginSignup.insertAdjacentHTML("afterbegin","<span id=\"userAccount\">" + userName + "</span><span id=\"exitAccountBtn\"> / خروج </span>");
+        const userAccount = $.querySelector("userAccount");
+        const exitAccountBtn = $.querySelector("#exitAccountBtn");
+        exitAccountBtn.addEventListener("click",exitAccount);
+    }
+};
+
+window.addEventListener("load",signChack);
