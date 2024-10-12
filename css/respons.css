@@ -58,8 +58,8 @@
         grid-template-columns: 1fr;
     }
     #enamadImg{
-        position: relative;
         margin: 0 auto;
+        position: relative;
     }
     #options{
         margin-bottom: 230px;
