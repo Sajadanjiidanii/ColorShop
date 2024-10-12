@@ -74,6 +74,9 @@ div#login-signup{
     margin-right: 10px;
     padding-top: 10px;
 }
+#login , #signup , #cart-icon{
+    color: rgb(118, 118, 118);
+}
 #login:hover , #signup:hover , #cart-icon:hover{
     cursor: pointer;
     color: black;
