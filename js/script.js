@@ -57,19 +57,20 @@ setInterval(function(){
 const loginSignup = $.querySelector("#login-signup");
 const logIn = $.querySelector("#login");
 const signUp = $.querySelector("#signup");
-let showUser = localStorage.setItem("ShowName","Yes");
+localStorage.setItem("ShowName","Yes");
 
 function exitAccount(){
     userAccount.style.display = "none";
     exitAccountBtn.style.display = "none";
     logIn.style.display = "inline";
     signUp.style.display = "inline";
-    showUser = localStorage.setItem("ShowName","No");
+    localStorage.setItem("ShowName","No");
 }
 
 function signChack(){
     let isName = localStorage.getItem("Name");
     let userName = JSON.parse(localStorage.getItem("Name"));
+    let showName = localStorage.getItem("ShowName");
 
     if( isName ){
         if( showUser == "Yes"){
