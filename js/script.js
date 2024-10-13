@@ -57,7 +57,6 @@ setInterval(function(){
 const loginSignup = $.querySelector("#login-signup");
 const logIn = $.querySelector("#login");
 const signUp = $.querySelector("#signup");
-localStorage.setItem("ShowName","Yes");
 
 function exitAccount(){
     userAccount.style.display = "none";
@@ -71,7 +70,6 @@ function signChack(){
     let isName = localStorage.getItem("Name");
     let userName = JSON.parse(localStorage.getItem("Name"));
     let showName = localStorage.getItem("ShowName");
-    console.log(showName == "Yes");
 
     if( isName ){
         if( showUser == "Yes"){
