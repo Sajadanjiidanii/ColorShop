@@ -66,8 +66,8 @@ function exitAccount(){
 }
 
 function signChack(){
-    let isName = JSON.parse(localStorage.getItem("Name") != "");
-    let userName = JSON.parse(localStorage.getItem("Name"));
+    let isName = localStorage.getItem("Name");
+    let userName = localStorage.getItem("Name");
 
     if( isName ){
         logIn.style.display = "none";
