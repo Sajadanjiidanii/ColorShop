@@ -57,12 +57,14 @@ setInterval(function(){
 const loginSignup = $.querySelector("#login-signup");
 const logIn = $.querySelector("#login");
 const signUp = $.querySelector("#signup");
+let showUser = localStorage.setItem("ShowName","Yes");
 
 function exitAccount(){
     userAccount.style.display = "none";
     exitAccountBtn.style.display = "none";
     logIn.style.display = "inline";
     signUp.style.display = "inline";
+    showUser = localStorage.setItem("ShowName","No");
 }
 
 function signChack(){
@@ -70,12 +72,14 @@ function signChack(){
     let userName = JSON.parse(localStorage.getItem("Name"));
 
     if( isName ){
-        logIn.style.display = "none";
-        signUp.style.display = "none";
-        loginSignup.insertAdjacentHTML("afterbegin","<span id=\"userAccount\">" + userName + "</span><span id=\"exitAccountBtn\"> / خروج </span>");
-        const userAccount = $.querySelector("userAccount");
-        const exitAccountBtn = $.querySelector("#exitAccountBtn");
-        exitAccountBtn.addEventListener("click",exitAccount);
+        if( showUser == "Yes"){
+            logIn.style.display = "none";
+            signUp.style.display = "none";
+            loginSignup.insertAdjacentHTML("afterbegin","<span id=\"userAccount\">" + userName + "</span><span id=\"exitAccountBtn\"> / خروج </span>");
+            const userAccount = $.querySelector("userAccount");
+            const exitAccountBtn = $.querySelector("#exitAccountBtn");
+            exitAccountBtn.addEventListener("click",exitAccount);
+        }
     }
 };
 
