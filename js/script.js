@@ -72,7 +72,7 @@ function signChack(){
     let showName = localStorage.getItem("ShowName");
 
     if( isName ){
-        if( showUser == "Yes"){
+        if( showName == "Yes"){
             logIn.style.display = "none";
             signUp.style.display = "none";
             loginSignup.insertAdjacentHTML("afterbegin","<span id=\"userAccount\">" + userName + "</span><span id=\"exitAccountBtn\"> / خروج </span>");
