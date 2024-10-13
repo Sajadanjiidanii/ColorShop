@@ -71,7 +71,7 @@ function signChack(){
     let isName = localStorage.getItem("Name");
     let userName = JSON.parse(localStorage.getItem("Name"));
     let showName = localStorage.getItem("ShowName");
-    console.log(showName);
+    console.log(showName == "Yes");
 
     if( isName ){
         if( showUser == "Yes"){
