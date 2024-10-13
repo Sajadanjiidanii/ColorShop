@@ -25,10 +25,13 @@ nav#menu{
 /* menu top */
 
 div#menu-top{
+    align-items: center;
+    margin-bottom: 20px;
     grid-gap: 10px;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 10% 1fr 8%;
+    justify-content: space-evenly;
+    grid-template-columns: 10% 1fr 15%;
 }
 img#logo-top{
     width: 140px;
@@ -41,7 +44,6 @@ div#searchbox{
     grid-auto-flow: column;
     grid-template-columns: 1fr 5%;
     grid-template-rows: 100%;
-    width: 90%;
     height: 45px;
     margin-top: 15px;
     border-radius: 5px;
@@ -64,9 +66,10 @@ input{
     color: black;
 }
 div#login-signup{
+    position: absolute;
     margin: 2px -75px 0 0;
     color: rgb(118, 118, 118);
-    left: -10px;
+    left: 10px;
 }
 div#login-signup > span{
     cursor: pointer;
@@ -231,8 +234,6 @@ button#showMore:hover{
 }
 #enamadImg{
     width: 200px;
-    position: absolute;
-    left: 0;
 }
 
 /* class */
