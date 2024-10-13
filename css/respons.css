@@ -127,4 +127,7 @@
         top: 5px;
         right: -30px;
     }
+    ul#items{
+        font-size: 8px;
+    }
 }
