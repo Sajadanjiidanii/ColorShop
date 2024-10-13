@@ -116,7 +116,7 @@
 }
 @media (max-width : 400px){
     div#menu-top{
-        grid-template-columns: 10% 1fr 33%;
+        grid-template-columns: 9% 1fr 33%;
     }
     #login-signup{
         font-size: 10px;
