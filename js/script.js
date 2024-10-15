@@ -49,7 +49,7 @@ function goCart(event){
     let nameTarget = parentTarget.firstChild.nextElementSibling.innerHTML;
     let pricyTarget = parentTarget.lastChild.innerHTML;
     localStorage.setItem("productInfo",JSON.stringify({category :  categoryTarget , name : nameTarget , pricy : pricyTarget , img : imgTarget}));
-    // location.href = ;
+    location.href = "https://sajadanjiidanii.github.io/Purchase-page/";
 }
 
 /// start create slider ///
