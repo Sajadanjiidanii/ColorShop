@@ -69,7 +69,7 @@ div#login-signup{
     position: absolute;
     margin: 2px -75px 0 0;
     color: rgb(118, 118, 118);
-    left: 10px;
+    left: 0;
 }
 div#login-signup > span{
     cursor: pointer;
