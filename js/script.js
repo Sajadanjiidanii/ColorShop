@@ -64,8 +64,6 @@ setInterval(function(){
 
 /// sign in chacke ///
 
-/// sign in chacke ///
-
 const loginSignup = $.querySelector("#login-signup");
 const logIn = $.querySelector("#login");
 const signUp = $.querySelector("#signup");
