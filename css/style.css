@@ -69,7 +69,7 @@ div#login-signup{
     position: absolute;
     margin: 2px -75px 0 0;
     color: rgb(118, 118, 118);
-    left: 0;
+    left: 5px;
 }
 div#login-signup > span{
     cursor: pointer;
@@ -80,7 +80,7 @@ div#login-signup > span:hover{
 #cart-icon{
     cursor: pointer;
     font-size: 30px;
-    margin-right: 10px;
+    margin-right: 0;
     padding-top: 10px;
 }
 #login , #signup , #cart-icon{
